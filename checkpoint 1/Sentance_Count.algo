@@ -1,0 +1,21 @@
+ALGORITHM Sentance_Count
+VAR
+    i: INTEGER:=0;
+    SENTANCE: STRING;
+    C: CHAR;
+    nbr_v: INTEGER:=0;
+    nbr_w: INTEGER:=1;
+BEGIN
+    read(SENTANCE);
+WHILE (SENTANCE[i]<>".") DO
+C:=SENTANCE[i].ToLower();
+IF (C="a" OR C="e" OR C="u" OR C="o" OR C="i") THEN
+    nbr_v:= nbr_v+1;
+    ELSE IF (C=" ")
+    nbr_w:= nbr_w+1;
+END_IF
+    i=i+1    
+
+END_WHILE
+Write(i , nbr_v , nbr_w)
+END
